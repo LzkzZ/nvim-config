@@ -1,0 +1,23 @@
+{
+    "suggest.noselect": true,
+    "clangd.path": "~/.config/coc/extensions/coc-clangd-data/download/clangd_15.0.6/bin/clangd",
+    "clangd.arguments": [
+        "--header-insertion=never",
+        "--completion-style=detailed"
+    ],
+    "inlayHint.enable": false,
+    "suggest.floatConfig": {
+        "border": true
+    },
+    "diagnostic.floatConfig": {
+        "border": true
+    },
+    "hover.floatConfig": {
+        "border": true
+    },
+
+    "Lua.diagnostics.globals": [
+        "vim",
+        "use"
+    ]
+}
