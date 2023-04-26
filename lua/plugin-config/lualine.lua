@@ -26,10 +26,10 @@ require('lualine').setup {
                 path = 1,  -- relative path
                 shorting_target = 40
             },
-            {
-                'aerial',
-                sep = ' > ',
-            }
+            -- {
+            --     'aerial',
+            --     sep = ' > ',
+            -- }
         },
         lualine_x = {'encoding', 'fileformat', 'filetype'},
         lualine_y = {'progress'},

@@ -9,6 +9,8 @@ require("bufferline").setup {
                 text_align = "left"
             }
         },
-        separator_style = "padded_slant"
+        separator_style = "padded_slant",
+        show_close_icon = false,
+        show_buffer_close_icons = false
     }
 }

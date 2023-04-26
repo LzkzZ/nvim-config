@@ -86,7 +86,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
 })
 
 -- 退出关闭 nvim-tree
-vim.api.nvim_create_autocmd("QuitPre", {
-    callback = function() vim.cmd("NvimTreeClose") end,
-})
+-- vim.api.nvim_create_autocmd("QuitPre", {
+--     callback = function() vim.cmd("NvimTreeClose") end,
+-- })
 
