@@ -42,14 +42,6 @@ return require('packer').startup(function()
         'glepnir/zephyr-nvim',
         requires = 'nvim-treesitter/nvim-treesitter'
     }
-    -- gitgutter
-    use {
-        'airblade/vim-gitgutter'
-    }
-    -- blamer
-    use {
-        'APZelos/blamer.nvim'
-    }
     -- lualine
     use {
         'nvim-lualine/lualine.nvim'
@@ -78,5 +70,9 @@ return require('packer').startup(function()
     -- nvim-ts-rainbow
     use {
         'p00f/nvim-ts-rainbow'
+    }
+    -- gitsigns.nvim
+    use {
+        'lewis6991/gitsigns.nvim'
     }
 end)

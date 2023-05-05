@@ -45,7 +45,7 @@ vim.o.backup = false
 vim.o.writebackup = false
 vim.o.swapfile = false
 -- 设置updatetime, 默认为4000，:h updatetime
-vim.o.updatetime = 300
+vim.o.updatetime = 3000
 -- 拆分窗口从下边和右边出现
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -68,7 +68,7 @@ vim.opt.clipboard = "unnamedplus"
 vim.g.mapleader = ","
 -- 关闭autopair开关快捷键
 vim.g.AutoPairsShortcutToggle = ""
--- 总是显示2列侧标记图标(gitgutter, coc.nvim)
+-- 总是显示2列侧标记图标(gitsigns, coc.nvim diagnostics)
 vim.o.signcolumn = "yes:2"
 
 -- colorscheme

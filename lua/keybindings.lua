@@ -45,7 +45,8 @@ map("n", "K", '<CMD>lua _G.show_docs()<CR>', opt)
 map('n', '<A-w>', ':Bdelete<CR>', opt_silent)  -- require vim-bbye
 map('n', '<A-l>', ':BufferLineCycleNext<CR>', opt_silent)
 map('n', '<A-h>', ':BufferLineCyclePrev<CR>', opt_silent)
-map('n', '<A-p>', ':BufferLineTogglePin<CR>', opt_silent)
+map('n', '<A-p>', ':BufferLinePick<CR>', opt_silent)
+map('n', '<A-P>', ':BufferLineTogglePin<CR>', opt_silent)
 map('n', '<A-backspace>', ':BufferLineCloseLeft<CR> | :BufferLineCloseRight<CR>', opt_silent)
 
 -- vim-quickhl
@@ -54,12 +55,13 @@ map('x', 'mm', '<Plug>(quickhl-manual-this)', opt_silent)
 map('n', 'mM', '<Plug>(quickhl-manual-reset)', opt_silent)
 map('n', 'mw', '<Plug>(quickhl-manual-this-whole-word)', opt_silent)
 
--- gitgutter
-map('n', 'gj', '<Plug>(GitGutterNextHunk)', opt_silent)
-map('n', 'gk', '<Plug>(GitGutterPrevHunk)', opt_silent)
-map('n', 'gp', '<Plug>(GitGutterPreviewHunk)', opt_silent)
-map('n', 'gs', '<Plug>(GitGutterStageHunk)', opt_silent)
-map('n', 'gu', '<Plug>(GitGutterUndoHunk)', opt_silent)
+-- gitsigns
+map('n', 'gj', ':Gitsigns next_hunk<CR>', opt_silent)
+map('n', 'gk', ':Gitsigns prev_hunk<CR>', opt_silent)
+map('n', 'gp', ':Gitsigns preview_hunk<CR>', opt_silent)
+map('n', 'gs', ':Gitsigns stage_hunk<CR>', opt_silent)
+map('n', 'gc', ':Gitsigns reset_hunk<CR>', opt_silent)  -- checkout
+map('n', 'gb', ':Gitsigns toggle_current_line_blame<CR>', opt_silent)
 
 -- telescope
 map('n', '<C-p>', ':Telescope find_files<CR>', opt_silent)

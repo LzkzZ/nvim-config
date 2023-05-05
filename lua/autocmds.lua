@@ -47,7 +47,7 @@ vim.api.nvim_create_autocmd({"BufWinEnter", "FileType"}, {
 -- end 打开文件记住上次浏览位置
 
 -- 关闭高亮
-vim.api.nvim_create_autocmd({"InsertEnter", "BufLeave"}, {
+vim.api.nvim_create_autocmd({"CursorHold"}, {
     pattern = '',
     command = "set nohlsearch"
 })
