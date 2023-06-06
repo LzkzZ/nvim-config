@@ -16,4 +16,5 @@ require('plugin-config/indentLine')
 require('plugin-config/alpha-nvim')
 require('plugin-config/aerial-nvim')
 require('plugin-config/gitsigns-nvim')
+require('plugin-config/leap')
 

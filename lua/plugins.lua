@@ -75,4 +75,8 @@ return require('packer').startup(function()
     use {
         'lewis6991/gitsigns.nvim'
     }
+    -- leap.nvim
+    use {
+        'ggandor/leap.nvim'
+    }
 end)
