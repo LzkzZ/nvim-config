@@ -21,10 +21,6 @@ return require('packer').startup(function()
             'moll/vim-bbye'
         }
     }
-    -- indentLine
-    use {
-        'Yggdroot/indentLine'
-    }
     -- nerdcommenter
     use {
         'scrooloose/nerdcommenter'
@@ -78,5 +74,14 @@ return require('packer').startup(function()
     -- leap.nvim
     use {
         'ggandor/leap.nvim'
+    }
+    -- mini.animate
+    use {
+        'echasnovski/mini.animate',
+        branch = 'stable'
+    }
+    -- indent-blankline
+    use {
+        'lukas-reineke/indent-blankline.nvim'
     }
 end)

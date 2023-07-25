@@ -27,6 +27,7 @@ map('n', '<C-h>', '<Plug>(coc-declaration)', opt)  -- :execute "normal \<Plug>(c
 map('n', '<C-j>', '<Plug>(coc-definition)', opt)
 map('n', '<C-l>', '<Plug>(coc-references)', opt)
 map('n', '<Leader>fx', '<Plug>(coc-fix-current)', opt)
+map('n', '<Leader>cd' ,':CocDiagnostics<CR>', opt_silent)
 
 -- Use K to show documentation in preview window
 function _G.show_docs()

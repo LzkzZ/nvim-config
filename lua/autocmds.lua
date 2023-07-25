@@ -90,3 +90,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
 --     callback = function() vim.cmd("NvimTreeClose") end,
 -- })
 
+-- 设置indent-blankline当前context高亮颜色
+-- 配色表 https://blog.51cto.com/u_15080030/3564045
+vim.cmd([[highlight IndentBlanklineContextChar guifg=#767676 gui=nocombine]])
+
