@@ -11,6 +11,10 @@ map('n', '<C-d>', '10j', opt)
 -- 粘贴快捷键替换，P粘贴到光标前，g光标移动到粘贴结束位置
 map('n', 'p', 'gP', opt)
 
+-- 退出
+map('n', 'qq', ':q<CR>', opt_silent)
+map('n', 'wqq', ':wq<CR>', opt_silent)
+
 -- 高亮搜索
 map ('n', '*',':set hlsearch<CR>*', opt_silent)
 map ('n', '#',':set hlsearch<CR>#', opt_silent)

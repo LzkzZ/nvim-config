@@ -1,3 +1,5 @@
+-- require("nvim-treesitter.install").prefer_git = true
+
 -- https://zhuanlan.zhihu.com/p/441818052
 require'nvim-treesitter.configs'.setup {
     -- 安装 language parser

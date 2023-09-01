@@ -3,7 +3,8 @@
     "clangd.path": "~/.config/coc/extensions/coc-clangd-data/download/clangd_15.0.6/bin/clangd",
     "clangd.arguments": [
         "--header-insertion=never",
-        "--completion-style=detailed"
+        "--completion-style=detailed",
+        "--function-arg-placeholders=true"
     ],
     "inlayHint.enable": false,
     "suggest.floatConfig": {
@@ -19,5 +20,8 @@
     "Lua.diagnostics.globals": [
         "vim",
         "use"
-    ]
+    ],
+
+    "diagnostic.errorSign": "✘",
+    "diagnostic.enableHighlightLineNumber": true,
 }
